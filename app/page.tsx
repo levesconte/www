@@ -48,7 +48,7 @@ export default function Home() {
           >
             dwd
           </a>
-          {` — a personal website I built for a client.`}
+          {` — a personal website I built.`}
           <br />
         </p>
       </main>
