@@ -21,9 +21,9 @@ export default function Home() {
       {/* About */}
       <section className="prose prose-zinc dark:prose-invert animate-slide-up-and-fade-2 mt-[1.5em] text-pretty text-[15px]">
         <p className="leading-relaxed">
-          I'm an aspiring{" "}
+          I'm a{" "}
           <span className="font-reader text-[16px] font-medium italic text-foreground">
-            Software Engineer
+            Software Developer
           </span>{" "}
           living in Sweden. If you'd like to get in touch, you can reach me at{" "}
           <span className="font-reader text-[16px] font-medium italic text-foreground">
