@@ -21,8 +21,7 @@ const NewsReader = Newsreader({
 
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
-  description:
-    "Hi, I'm Tomas. I'm an aspiring Software Engineer living in Sweden.",
+  description: "Hi, I'm Tomas. I'm a Software Developer living in Sweden.",
 };
 
 export default function RootLayout({
