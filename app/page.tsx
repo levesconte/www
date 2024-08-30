@@ -43,11 +43,11 @@ export default function Home() {
             </a>{" "}
             and{" "}
             <a
-              href="https://linkedin.com/in/tomas-levesconte/"
+              href="https://x.com/t_levesconte"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              𝕏
             </a>
             .
           </p>
