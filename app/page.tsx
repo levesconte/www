@@ -1,57 +1,79 @@
 export default function Home() {
   return (
     <>
-      <header className="flex flex-col justify-center text-[1.1em] text-white">
-          <h1 className="mb-[.3em] text-[1.3em] font-bold leading-[normal]">
-            {`Hi, I'm Tomas.`}
-          </h1>
+      {/* Header */}
+      <header className="animate-slide-up-and-fade-1 flex flex-col justify-center">
+        {/* Name */}
+        <h1 className="text-[15px] font-medium">Tomas Le Vesconte</h1>
 
-          <p className="mb-[.3em] text-white/70">
-            {`I'm an aspiring Software Engineer living in Sweden. If
-            you'd like to get in touch, you can reach me at `}
-            <span className="font-semibold text-white">tlevesconte [at] proton [dot] me</span>
-            {`. You can also find me on `}
-            <a
-              className="border-b border-dotted border-white font-semibold text-white"
-              href="https://github.com/tlevesconte"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            {` and `}
-            <a
-              className="border-b border-dotted border-white font-semibold text-white"
-              href="https://www.linkedin.com/in/tomas-levesconte/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-            .
-          </p>
-
-          <p className="text-white/70">
-            Wales → <b className="text-white">Sweden</b>
-          </p>
+        {/* Status */}
+        <div className="flex items-center">
+          <div className="absolute flex size-4">
+            <span className="absolute top-[4.5px] size-2 animate-ping rounded-full bg-red-500 opacity-75"></span>
+            <span className="relative top-[4.5px] size-2 rounded-full bg-red-500"></span>
+          </div>
+          <span className="prose prose-neutral dark:prose-invert ml-4 text-[14px]">
+            Unavailable
+          </span>
+        </div>
       </header>
 
-      <hr className="mb-[1.2em] mt-[1.2em]"></hr>
-
-      <main>
-        <p className="text-[1.1em] text-white/70">
+      {/* About */}
+      <section className="prose prose-zinc dark:prose-invert animate-slide-up-and-fade-2 mt-[1.5em] text-pretty text-[15px]">
+        <p className="leading-relaxed">
+          I'm an aspiring{" "}
+          <span className="font-reader text-[16px] font-medium italic text-foreground">
+            Software Engineer
+          </span>{" "}
+          living in Sweden. If you'd like to get in touch, you can reach me at{" "}
+          <span className="font-reader text-[16px] font-medium italic text-foreground">
+            tlevesconte [at] proton [dot] me
+          </span>{" "}
+          . You can also find me on{" "}
           <a
-            className="border-b border-dotted border-green-400 font-semibold text-green-400"
-            href="https://danwallacedrummer.com"
+            href="https://github.com/tlevesconte"
             target="_blank"
             rel="noopener noreferrer"
           >
-            dwd
+            GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://linkedin.com/in/tomas-levesconte/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </a>
-          {` — a personal website I built.`}
-          <br />
+          .
         </p>
-      </main>
+
+        {/* Location */}
+        <p className="prose-neutral dark:prose-invert text-[14px]">
+          Wales
+          <span className="font-noto"> →</span>
+          <span className="font-medium"> Sweden</span>
+        </p>
+
+        {/* Break */}
+        <hr className="mb-[1.2em] mt-[1.2em]" />
+      </section>
+
+      {/* Projects */}
+      <section className="animate-slide-up-and-fade-3">
+        <ul>
+          <li className="prose prose-zinc dark:prose-invert text-pretty text-[15px]">
+            <a
+              href="https://danwallacedrummer.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              dwd
+            </a>
+            <span> — a personal website.</span>
+          </li>
+        </ul>
+      </section>
     </>
   );
 }

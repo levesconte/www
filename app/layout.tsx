@@ -1,20 +1,28 @@
-import "./globals.css";
-
 import type { Metadata } from "next";
-import { cn } from "@/lib/utils"
+import "./globals.css";
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "./components/theme-provider";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Noto_Sans_Math, Newsreader } from "next/font/google";
 
-import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
-// import localFont from "next/font/local";
+const NotoSansMath = Noto_Sans_Math({
+  subsets: ["math"],
+  variable: "--font-noto-sans-math",
+  weight: "400",
+  display: "swap",
+});
 
-// const sitka = localFont({
-//   src: "./sitka.ttf",
-//   display: "swap",
-// });
+const NewsReader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
-  description: "Hi, I'm Tomas. I'm an aspiring Software Engineer living in Sweden.",
+  description:
+    "Hi, I'm Tomas. I'm an aspiring Software Engineer living in Sweden.",
 };
 
 export default function RootLayout({
@@ -26,11 +34,23 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "mx-auto my-[30vmin] max-w-3xl px-[6%] bg-background font-sans antialiased",
-          GeistSans.variable
+          "bg-background font-sans antialiased",
+          GeistSans.variable,
+          GeistMono.variable,
+          NotoSansMath.variable,
+          NewsReader.variable,
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="mx-auto my-[30vmin] max-w-screen-sm px-8 py-4">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
