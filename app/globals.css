@@ -69,10 +69,10 @@
   }
 }
 
-@keyframes slideUpAndFade {
+@keyframes slideDownAndFade {
   0% {
     opacity: 0;
-    transform: translateY(-12px);
+    transform: translateY(-10px);
     visibility: hidden;
   }
 
@@ -86,14 +86,14 @@
   }
 }
 
-.animate-slide-up-and-fade-1 {
-  animation: slideUpAndFade 0.6s ease-in-out 0.1s both;
+.animate-slide-down-and-fade-1 {
+  animation: slideDownAndFade 0.6s ease-in-out 0.1s both;
 }
 
-.animate-slide-up-and-fade-2 {
-  animation: slideUpAndFade 0.6s ease-in-out 0.2s both;
+.animate-slide-down-and-fade-2 {
+  animation: slideDownAndFade 0.6s ease-in-out 0.2s both;
 }
 
-.animate-slide-up-and-fade-3 {
-  animation: slideUpAndFade 0.6s ease-in-out 0.3s both;
+.animate-slide-down-and-fade-3 {
+  animation: slideDownAndFade 0.6s ease-in-out 0.3s both;
 }

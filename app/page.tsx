@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       {/* Header */}
-      <header className="animate-slide-up-and-fade-1 flex flex-col justify-center">
+      <header className="animate-slide-down-and-fade-1 flex flex-col justify-center">
         {/* Name */}
         <h1 className="text-[15px] font-medium">Tomas Le Vesconte</h1>
 
@@ -22,7 +22,7 @@ export default function Home() {
       </header>
 
       {/* About */}
-      <section className="animate-slide-up-and-fade-2">
+      <section className="animate-slide-down-and-fade-2">
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
             I'm a{" "}
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section className="animate-slide-up-and-fade-3">
+      <section className="animate-slide-down-and-fade-3">
         <ul>
           <li className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
             <a
