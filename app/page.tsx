@@ -25,7 +25,9 @@ export default function Home() {
       </header>
 
       {/* About */}
-      <section className="animate-slide-down-and-fade-2">
+      <section className="animate-slide-down-and-fade-2" aria-label="about me">
+        <h2 className="sr-only">About</h2>
+
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
             I'm a <SpecialText text="Software Developer" /> living in Sweden. If
@@ -49,7 +51,12 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section className="animate-slide-down-and-fade-3">
+      <section
+        className="animate-slide-down-and-fade-3"
+        aria-label="my projects"
+      >
+        <h2 className="sr-only">Projects</h2>
+
         <ul>
           <li className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
             <Hyperlink href="https://danwallacedrummer.com" text="dwd" />

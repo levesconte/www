@@ -11,6 +11,7 @@ export default function Hyperlink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`${text} (opens in a new tab)`}
     >
       {text}
     </a>
