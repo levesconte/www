@@ -1,3 +1,6 @@
+import Hyperlink from "@/components/hyperlink";
+import SpecialText from "@/components/special-text";
+
 export default function Home() {
   return (
     <>
@@ -25,33 +28,12 @@ export default function Home() {
       <section className="animate-slide-down-and-fade-2">
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
-            I'm a{" "}
-            <span className="font-reader text-[16px] font-medium text-foreground">
-              Software Developer
-            </span>{" "}
-            living in Sweden. If you'd like to get in touch, you can reach me at{" "}
-            <span className="font-reader text-[16px] font-medium text-foreground">
-              tlevesconte [at] proton [dot] me
-            </span>{" "}
-            . You can also find me on{" "}
-            <a
-              className="no-underline"
-              href="https://github.com/tlevesconte"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>{" "}
-            and{" "}
-            <a
-              className="no-underline"
-              href="https://x.com/t_levesconte"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              𝕏
-            </a>
-            .
+            I'm a <SpecialText text="Software Developer" /> living in Sweden. If
+            you'd like to get in touch, you can reach me at{" "}
+            <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
+            also find me on{" "}
+            <Hyperlink href="https://github.com/tlevesconte" text="GitHub" />{" "}
+            and <Hyperlink href="https://x.com/t_levesconte" text="𝕏" />.
           </p>
 
           {/* Location */}
@@ -70,14 +52,7 @@ export default function Home() {
       <section className="animate-slide-down-and-fade-3">
         <ul>
           <li className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
-            <a
-              className="no-underline"
-              href="https://danwallacedrummer.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              dwd
-            </a>
+            <Hyperlink href="https://danwallacedrummer.com" text="dwd" />
             <span> — a personal website.</span>
           </li>
         </ul>
