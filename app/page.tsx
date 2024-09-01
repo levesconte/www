@@ -35,6 +35,7 @@ export default function Home() {
             </span>{" "}
             . You can also find me on{" "}
             <a
+              className="no-underline"
               href="https://github.com/tlevesconte"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,6 +44,7 @@ export default function Home() {
             </a>{" "}
             and{" "}
             <a
+              className="no-underline"
               href="https://x.com/t_levesconte"
               target="_blank"
               rel="noopener noreferrer"
@@ -69,6 +71,7 @@ export default function Home() {
         <ul>
           <li className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
             <a
+              className="no-underline"
               href="https://danwallacedrummer.com"
               target="_blank"
               rel="noopener noreferrer"
