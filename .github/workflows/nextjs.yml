@@ -45,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Disable Next.js Telemetry
-        run: npx next telemetry disable
+        run: pnpm dlx next telemetry disable
       - name: Build with Next.js
         run: pnpm next build
       - name: Upload artifact
