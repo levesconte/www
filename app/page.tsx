@@ -26,11 +26,11 @@ export default function Home() {
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
             I'm a{" "}
-            <span className="font-reader text-[16px] font-medium italic text-foreground">
+            <span className="font-reader text-[16px] font-medium text-foreground">
               Software Developer
             </span>{" "}
             living in Sweden. If you'd like to get in touch, you can reach me at{" "}
-            <span className="font-reader text-[16px] font-medium italic text-foreground">
+            <span className="font-reader text-[16px] font-medium text-foreground">
               tlevesconte [at] proton [dot] me
             </span>{" "}
             . You can also find me on{" "}

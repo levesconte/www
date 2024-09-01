@@ -16,6 +16,8 @@ const NotoSansMath = Noto_Sans_Math({
 const NewsReader = Newsreader({
   subsets: ["latin"],
   variable: "--font-newsreader",
+  weight: "500",
+  style: "italic",
   display: "swap",
 });
 
