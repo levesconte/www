@@ -20,7 +20,6 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
-        mono: ["var(--font-geist-mono)"],
         noto: ["var(--font-noto-sans-math)"],
         reader:["var(--font-newsreader)"]
       },

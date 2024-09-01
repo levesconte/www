@@ -3,7 +3,6 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "./components/theme-provider";
 import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import { Noto_Sans_Math, Newsreader } from "next/font/google";
 
 const NotoSansMath = Noto_Sans_Math({
@@ -37,7 +36,6 @@ export default function RootLayout({
         className={cn(
           "bg-background font-sans antialiased",
           GeistSans.variable,
-          GeistMono.variable,
           NotoSansMath.variable,
           NewsReader.variable,
         )}
