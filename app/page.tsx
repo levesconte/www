@@ -15,8 +15,8 @@ export default function Home() {
             {/* Status */}
             <div className="flex items-center">
               <div className="absolute flex size-[18px]">
-                <span className="absolute top-[4.5px] size-2 animate-ping rounded-full bg-red-500 opacity-75"></span>
-                <span className="relative top-[4.5px] size-2 rounded-full bg-red-500"></span>
+                <span className="absolute top-[4.5px] size-2 animate-ping rounded-full bg-red-500 opacity-75" />
+                <span className="relative top-[4.5px] size-2 rounded-full bg-red-500" />
               </div>
               <span className="prose prose-neutral ml-4 text-[14px] dark:prose-invert">
                 Unavailable
