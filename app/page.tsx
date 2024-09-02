@@ -1,3 +1,4 @@
+import ModeToggle from "@/components/mode-toggle";
 import Hyperlink from "@/components/hyperlink";
 import SpecialText from "@/components/special-text";
 
@@ -6,18 +7,24 @@ export default function Home() {
     <>
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col justify-center">
-        {/* Name */}
-        <h1 className="text-[15px] font-medium">Tomas Le Vesconte</h1>
+        <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-col">
+            {/* Name */}
+            <h1 className="text-[15px] font-medium">Tomas Le Vesconte</h1>
 
-        {/* Status */}
-        <div className="flex items-center">
-          <div className="absolute flex size-4">
-            <span className="absolute top-[4.5px] size-2 animate-ping rounded-full bg-red-500 opacity-75"></span>
-            <span className="relative top-[4.5px] size-2 rounded-full bg-red-500"></span>
+            {/* Status */}
+            <div className="flex items-center">
+              <div className="absolute flex size-[18px]">
+                <span className="absolute top-[4.5px] size-2 animate-ping rounded-full bg-red-500 opacity-75"></span>
+                <span className="relative top-[4.5px] size-2 rounded-full bg-red-500"></span>
+              </div>
+              <span className="prose prose-neutral ml-4 text-[14px] dark:prose-invert">
+                Unavailable
+              </span>
+            </div>
           </div>
-          <span className="prose prose-neutral ml-4 text-[14px] dark:prose-invert">
-            Unavailable
-          </span>
+
+          <ModeToggle />
         </div>
 
         {/* Break */}
