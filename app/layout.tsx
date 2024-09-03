@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background font-sans antialiased",
+          "font-sans antialiased",
           GeistSans.variable,
           NotoSansMath.variable,
           NewsReader.variable,
