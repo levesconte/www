@@ -21,8 +21,11 @@ const NewsReader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tlevesconte.me"),
   title: "Tomas Le Vesconte",
   description: "Hi, I'm Tomas. I'm a Software Developer living in Sweden.",
+  authors: [{ name: "Tomas Le Vesconte", url: "https://tlevesconte.me" }],
+  creator: "tlevesconte",
 };
 
 export default function RootLayout({
