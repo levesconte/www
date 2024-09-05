@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 import { GeistSans } from "geist/font/sans";
 import { Noto_Sans_Math, Newsreader } from "next/font/google";
 
