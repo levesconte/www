@@ -42,7 +42,7 @@ export default function Home() {
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
             <Hyperlink href="https://github.com/tlevesconte" text="GitHub" />{" "}
-            and <Hyperlink href="https://x.com/t_levesconte" text="𝕏" />.
+            and <Hyperlink href="https://x.com/tom3096" text="𝕏" />.
           </p>
 
           {/* Location */}
