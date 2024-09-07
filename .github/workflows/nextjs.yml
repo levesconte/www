@@ -44,10 +44,12 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
       - name: Install dependencies
         run: pnpm install
-      - name: Check Next.js Telemetry
+      - name: Check Next.js Telemetry 1
         run: pnpm next telemetry status
       - name: Disable Next.js Telemetry
         run: pnpm next telemetry disable
+      - name: Check Next.js Telemetry 2
+        run: pnpm next telemetry status
       - name: Build with Next.js
         run: pnpm next build
       - name: Upload artifact
