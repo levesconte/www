@@ -67,7 +67,7 @@ export default function Home() {
         <ul>
           <li className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
             <Hyperlink href="https://danwallacedrummer.com" text="dwd" />
-            <span> — a personal website.</span>
+            <span> — a personal website I built.</span>
           </li>
         </ul>
       </section>
