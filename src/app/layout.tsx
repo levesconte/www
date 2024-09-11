@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import localFont from 'next/font/local'
 import { GeistSans } from "geist/font/sans";
-import { Noto_Sans_Math, Newsreader } from "next/font/google";
+import { Noto_Sans_Math } from "next/font/google";
+
+const NewsReader = localFont({
+  src: "../../public/fonts/newsreader-italic.ttf",
+  variable: "--font-newsreader",
+  weight: "500",
+  display: "swap"
+})
 
 const NotoSansMath = Noto_Sans_Math({
   subsets: ["math"],
   variable: "--font-noto-sans-math",
   weight: "400",
-  display: "swap",
-});
-
-const NewsReader = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-newsreader",
-  weight: "500",
-  style: "italic",
   display: "swap",
 });
 
