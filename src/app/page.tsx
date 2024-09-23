@@ -8,22 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col justify-center">
         <div className="flex flex-row items-center justify-between">
-          <div className="flex flex-col">
-            {/* Name */}
-            <h1 className="text-[15px] font-medium">Tomas Le Vesconte</h1>
-
-            {/* Status */}
-            <div className="flex items-center">
-              <div className="absolute flex size-[18px]">
-                <span className="absolute top-[4.5px] size-2 animate-ping rounded-full bg-red-500 opacity-75" />
-                <span className="relative top-[4.5px] size-2 rounded-full bg-red-500" />
-              </div>
-              <span className="prose prose-neutral ml-4 text-[14px] dark:prose-invert">
-                Unavailable
-              </span>
-            </div>
-          </div>
-
+          <h1 className="text-[15px] font-medium">Tomas Le Vesconte</h1>
           <ModeToggle />
         </div>
 
@@ -37,8 +22,8 @@ export default function Home() {
 
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
-            I&#39;m a <SpecialText text="Software Developer" /> living in Sweden. If
-            you&#39;d like to get in touch, you can reach me at{" "}
+            I&#39;m a <SpecialText text="Software Developer" /> living in
+            Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
             <Hyperlink href="https://github.com/tlevesconte" text="GitHub" />{" "}
