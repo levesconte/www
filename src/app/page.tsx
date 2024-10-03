@@ -39,11 +39,11 @@ export default function Home() {
         </div>
 
         {/* Break */}
-        <hr className="mb-[1.2em] mt-[1.2em]" />
+        {/* <hr className="mb-[1.2em] mt-[1.2em]" /> */}
       </section>
 
       {/* Projects */}
-      <section
+      {/* <section
         className="animate-slide-down-and-fade-3"
         aria-label="my projects"
       >
@@ -55,7 +55,7 @@ export default function Home() {
             <span> — a personal website I built.</span>
           </li>
         </ul>
-      </section>
+      </section> */}
     </>
   );
 }
