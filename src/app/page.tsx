@@ -37,25 +37,7 @@ export default function Home() {
             <span className="font-medium"> Sweden</span>
           </p>
         </div>
-
-        {/* Break */}
-        {/* <hr className="mb-[1.2em] mt-[1.2em]" /> */}
       </section>
-
-      {/* Projects */}
-      {/* <section
-        className="animate-slide-down-and-fade-3"
-        aria-label="my projects"
-      >
-        <h2 className="sr-only">Projects</h2>
-
-        <ul>
-          <li className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
-            <Hyperlink href="https://danwallacedrummer.com" text="dwd" />
-            <span> — a personal website I built.</span>
-          </li>
-        </ul>
-      </section> */}
     </>
   );
 }
