@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
-            I&#39;m a <SpecialText text="Software Developer" /> living in
+            Hi! I&#39;m Tomas, a <SpecialText text="Software Developer" /> living in
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
