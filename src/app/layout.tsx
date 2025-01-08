@@ -23,7 +23,7 @@ const NotoSansMath = Noto_Sans_Math({
 export const metadata: Metadata = {
   metadataBase: new URL("https://tlevesconte.me"),
   title: "Tomas Le Vesconte",
-  description: "Hi, I'm Tomas. I'm a Software Developer living in Sweden.",
+  description: "Hi, I'm Tomas, a Software Developer living in Sweden. If you'd like to get in touch, check out my site!",
   authors: [{ name: "Tomas Le Vesconte", url: "https://tlevesconte.me" }],
   creator: "tlevesconte",
 };
