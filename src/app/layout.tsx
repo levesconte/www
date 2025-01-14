@@ -47,7 +47,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange
         >
           <main className="mx-auto my-[30vmin] max-w-screen-sm px-8 py-4">
             {children}
