@@ -1,6 +1,6 @@
-import ModeToggle from "@/components/mode-toggle";
-import Hyperlink from "@/components/hyperlink";
-import SpecialText from "@/components/special-text";
+import ModeToggle from "@/src/components/mode-toggle";
+import Hyperlink from "@/src/components/hyperlink";
+import SpecialText from "@/src/components/special-text";
 
 export default function Home() {
   return (
