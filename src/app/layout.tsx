@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/src/lib/utils";
-import { ThemeProvider } from "@/src/components/theme-provider"
-import localFont from 'next/font/local'
+import { ThemeProvider } from "@/src/components/theme-provider";
+import localFont from "next/font/local";
 import { GeistSans } from "geist/font/sans";
 import { Noto_Sans_Math } from "next/font/google";
 
@@ -10,8 +10,8 @@ const NewsReader = localFont({
   src: "./fonts/newsreader-italic.ttf",
   variable: "--font-newsreader",
   weight: "500",
-  display: "swap"
-})
+  display: "swap",
+});
 
 const NotoSansMath = Noto_Sans_Math({
   subsets: ["math"],
@@ -22,9 +22,11 @@ const NotoSansMath = Noto_Sans_Math({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tlevesconte.me"),
-  title: "Tomas Le Vesconte",
-  description: "Hi, I'm Tomas, a Software Developer living in Sweden. If you'd like to get in touch, check out my site!",
+  title: "Tomas Le Vesconte | Software Engineer",
+  description:
+    "Hi, My name is Tom and I'm a Software Engineer living in Sweden. If you'd like to get in touch, you can reach me at tlevesconte [at] proton [dot] me. You can also find me on GitHub and 𝕏.",
   authors: [{ name: "Tomas Le Vesconte", url: "https://tlevesconte.me" }],
+  keywords: ["tlevesconte", "Tomas Le Vesconte", "Software Engineer"],
   creator: "tlevesconte",
 };
 
@@ -43,11 +45,7 @@ export default function RootLayout({
           NewsReader.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <main className="mx-auto my-[30vmin] max-w-screen-sm px-8 py-4">
             {children}
           </main>
