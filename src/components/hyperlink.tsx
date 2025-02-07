@@ -11,7 +11,6 @@ export default function Hyperlink({
 }) {
   return (
     <a
-      className="no-underline"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
