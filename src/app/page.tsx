@@ -1,8 +1,6 @@
 import ModeToggle from "@/src/components/mode-toggle";
 import Hyperlink from "@/src/components/hyperlink";
 import SpecialText from "@/src/components/special-text";
-import GitHubButton from "../components/github-button";
-import XButton from "../components/x-button";
 
 export default function Home() {
   return (
@@ -11,21 +9,7 @@ export default function Home() {
       <header className="animate-slide-down-and-fade-1 flex flex-col justify-center">
         <div className="flex flex-row items-center justify-between">
           <h1 className="pr-4 text-[15px] font-medium">Tomas Le Vesconte</h1>
-          <div className="flex flex-row items-center">
-            {/* Links */}
-            <Hyperlink
-              href="https://github.com/tlevesconte"
-              text="GitHub"
-              element={<GitHubButton />}
-            />
-            <Hyperlink
-              href="https://x.com/levescontet"
-              text="X.com"
-              element={<XButton />}
-            />
-            {/* Toggle */}
-            <ModeToggle />
-          </div>
+          <ModeToggle />
         </div>
 
         {/* Break */}
@@ -43,14 +27,17 @@ export default function Home() {
             <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" /> and
             I&#39;m a <SpecialText text="Software Engineer" /> living in Sweden.
             If you&#39;d like to get in touch, you can reach me at{" "}
-            <SpecialText text="tlevesconte [at] proton [dot] me" />.
+            <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
+            also find me on{" "}
+            <Hyperlink text="GitHub" href="https://github.com/tlevesconte" />{" "}
+            and <Hyperlink text="𝕏" href="https://x.com/levescontet" />.
           </p>
 
           {/* Location */}
           <p className="prose-neutral text-[14px] dark:prose-invert">
             Wales
             <span className="font-noto"> →</span>
-            <span className="font-medium"> Sweden</span>
+            <span className="font-semibold"> Sweden</span>
           </p>
         </div>
       </section>
