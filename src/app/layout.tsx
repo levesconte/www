@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tlevesconte.me"),
   title: "Tomas Le Vesconte",
   description:
-    "Hi, My name is Tom and I'm a Software Engineer living in Sweden. If you'd like to get in touch, you can reach me at tlevesconte [at] proton [dot] me. You can also find me on GitHub and 𝕏.",
+    "Hi, My name is Tom, and I'm a Software Engineer living in Sweden. If you'd like to get in touch, you can reach me at tlevesconte [at] proton [dot] me. You can also find me on GitHub and 𝕏.",
   authors: [{ name: "Tomas Le Vesconte", url: "https://tlevesconte.me" }],
   keywords: ["tlevesconte", "Tomas Le Vesconte", "Software Engineer"],
   creator: "tlevesconte",
