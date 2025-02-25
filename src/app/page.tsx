@@ -1,6 +1,6 @@
-import ModeToggle from "@/src/components/mode-toggle";
-import Hyperlink from "@/src/components/hyperlink";
-import SpecialText from "@/src/components/special-text";
+import ModeToggle from "@/src/components/theme-toggle";
+import Hyperlink from "@/src/components/ui/hyperlink";
+import SpecialText from "@/src/components/ui/special-text";
 
 export default function Home() {
   return (
@@ -29,8 +29,7 @@ export default function Home() {
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
-            <Hyperlink text="GitHub" href="https://github.com/tlevesconte" />{" "}
-            and <Hyperlink text="𝕏" href="https://x.com/tlevs0" />.
+            <Hyperlink text="GitHub" href="https://github.com/tlevesconte" />.
           </p>
 
           {/* Location */}

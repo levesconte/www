@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import "./globals.css";
+
+import "@/src/styles/globals.css";
 import { cn } from "@/src/lib/utils";
 import { ThemeProvider } from "@/src/components/theme-provider";
+
 import localFont from "next/font/local";
 import { GeistSans } from "geist/font/sans";
 import { Noto_Sans_Math } from "next/font/google";
 
 const NewsReader = localFont({
-  src: "./fonts/newsreader-italic.ttf",
+  src: "../public/fonts/newsreader-italic.ttf",
   variable: "--font-newsreader",
   weight: "500",
   display: "swap",
