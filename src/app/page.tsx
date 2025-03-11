@@ -25,7 +25,7 @@ export default function Home() {
         <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
           <p className="leading-relaxed">
             <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />,
-            and I&#39;m a <SpecialText text="Software Engineer" /> living in
+            and I&#39;m a <SpecialText text="Software Developer" /> living in
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
