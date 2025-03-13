@@ -13,7 +13,7 @@ export default function Home() {
         </div>
 
         {/* Break */}
-        <hr className="mb-[1.2em] mt-[1.2em]" />
+        <hr className="mb-[1.2em] mt-[0.8em]" />
       </header>
 
       {/* About */}
@@ -29,7 +29,8 @@ export default function Home() {
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
-            <Hyperlink text="GitHub" href="https://github.com/tlevesconte" />.
+            <Hyperlink text="GitHub" href="https://github.com/tlevesconte" />{" "}
+            and <Hyperlink text="𝕏" href="https://x.com/tlevdev" />.
           </p>
 
           {/* Location */}

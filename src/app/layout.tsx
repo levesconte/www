@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     "Hi, My name is Tom, and I'm a Software Engineer living in Sweden. If you'd like to get in touch, you can reach me at tlevesconte [at] proton [dot] me. You can also find me on GitHub and 𝕏.",
   authors: [{ name: "Tomas Le Vesconte", url: "https://tlevesconte.me" }],
-  keywords: ["tlevesconte", "Tomas Le Vesconte", "Software Engineer"],
+  keywords: ["tlevesconte", "Tomas Le Vesconte", "Software Engineer", "Software Developer"],
   creator: "tlevesconte",
 };
 
@@ -48,7 +48,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <main className="mx-auto my-[30vmin] max-w-[650px] px-8 py-4">
+          <main className="mx-auto my-[30vmin] max-w-[651px] px-8 py-4">
             {children}
           </main>
         </ThemeProvider>
