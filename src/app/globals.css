@@ -1,7 +1,9 @@
+/* Tailwind v3.4.17 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* shadcn/ui */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -69,6 +71,7 @@
   }
 }
 
+/* Onload animation */
 @keyframes slideDownAndFade {
   0% {
     opacity: 0;

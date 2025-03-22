@@ -1,13 +1,13 @@
 import ModeToggle from "@/src/components/theme-toggle";
-import Hyperlink from "@/src/components/ui/hyperlink";
-import SpecialText from "@/src/components/ui/special-text";
+import Hyperlink from "@/src/components/hyperlink";
+import SpecialText from "@/src/components/special-text";
 
 export default function Home() {
   return (
     <>
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col justify-center">
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-between"> 
           <h1 className="pr-4 text-[15px] font-medium">Tomas Le Vesconte</h1>
           <ModeToggle />
         </div>
@@ -30,7 +30,7 @@ export default function Home() {
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
             <Hyperlink text="GitHub" href="https://github.com/tlevesconte" />{" "}
-            and <Hyperlink text="𝕏" href="https://x.com/tlevdev" />.
+            and <Hyperlink text="𝕏" href="https://x.com/levescontet" />.
           </p>
 
           {/* Location */}
