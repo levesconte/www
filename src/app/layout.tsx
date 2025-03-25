@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { cn } from "@/src/lib/utils";
 import { ThemeProvider } from "@/src/components/theme-provider";
 
-import localFont from "next/font/local";
-import { GeistSans } from "geist/font/sans";
-import { Noto_Sans_Math } from "next/font/google";
+import { cn } from "@/src/lib/utils";
 
-const NewsReader = localFont({
-  src: "./newsreader-italic.ttf",
+import { Noto_Sans_Math } from "next/font/google";
+import { Baskervville } from "next/font/google";
+import { Newsreader } from "next/font/google";
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
   variable: "--font-newsreader",
   weight: "500",
   display: "swap",
 });
 
-const NotoSansMath = Noto_Sans_Math({
+const baskervville = Baskervville({
+  subsets: ["latin"],
+  variable: "--font-baskervville",
+  weight: "400",
+  display: "swap",
+});
+
+const notosansmath = Noto_Sans_Math({
   subsets: ["math"],
   variable: "--font-noto-sans-math",
   weight: "400",
@@ -26,9 +34,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tlevesconte.me"),
   title: "Tomas Le Vesconte",
   description:
-    "Hi, My name is Tom, and I'm a Software Engineer living in Sweden. If you'd like to get in touch, you can reach me at tlevesconte [at] proton [dot] me. You can also find me on GitHub and 𝕏.",
+    "Hi, My name is Tom, and I'm a Software Developer living in Sweden. If you'd like to get in touch, you can reach me at tlevesconte [at] proton [dot] me. You can also find me on GitHub and 𝕏.",
   authors: [{ name: "Tomas Le Vesconte", url: "https://tlevesconte.me" }],
-  keywords: ["Tomas Le Vesconte", "tlevesconte", "levescontet", "Software Engineer", "Software Developer"],
+  keywords: [
+    "Tomas Le Vesconte",
+    "tlevesconte",
+    "levescontet",
+    "Software Engineer",
+    "Software Developer",
+  ],
   creator: "tlevesconte",
 };
 
@@ -41,14 +55,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "font-sans antialiased",
-          GeistSans.variable,
-          NotoSansMath.variable,
-          NewsReader.variable,
+          "font-baskervville antialiased text-[17px]",
+          notosansmath.variable,
+          newsreader.variable,
+          baskervville.variable,
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <main className="mx-auto my-[30vmin] max-w-[651px] px-8 py-4">
+          <main className="mx-auto my-[30vmin] max-w-[700px] px-8 py-4">
             {children}
           </main>
         </ThemeProvider>

@@ -6,14 +6,16 @@ export default function Home() {
   return (
     <>
       {/* Header */}
-      <header className="animate-slide-down-and-fade-1 flex flex-col justify-center">
-        <div className="flex flex-row items-center justify-between"> 
-          <h1 className="pr-4 text-[15px] font-medium">Tomas Le Vesconte</h1>
+      <header className="animate-slide-down-and-fade-1 flex flex-col">
+        <div className="flex flex-row items-center justify-between">
+          <h1 className="pr-4 font-reader font-medium text-primary-foreground">
+            Tomas Le Vesconte
+          </h1>
           <ModeToggle />
         </div>
 
         {/* Break */}
-        <hr className="mb-[1.2em] mt-[0.8em]" />
+        <hr className="mb-[20px] mt-[12px] border-dotted border-secondary-foreground opacity-20" />
       </header>
 
       {/* About */}
@@ -22,8 +24,8 @@ export default function Home() {
         <h2 className="sr-only">About</h2>
 
         {/* Description */}
-        <div className="prose prose-zinc text-pretty text-[15px] dark:prose-invert">
-          <p className="leading-relaxed">
+        <div className="max-w-full text-secondary-foreground">
+          <p className="mb-[20px] leading-relaxed">
             <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />,
             and I&#39;m a <SpecialText text="Software Developer" /> living in
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
@@ -34,10 +36,10 @@ export default function Home() {
           </p>
 
           {/* Location */}
-          <p className="prose-neutral text-[14px] dark:prose-invert">
+          <p>
             Wales
-            <span className="font-noto"> →</span>
-            <strong> Sweden</strong>
+            <span className="font-noto"> → </span>
+            <SpecialText text="Sweden" />
           </p>
         </div>
       </section>
