@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         {/* Break */}
-        <hr className="mb-[20px] mt-[12px] border-dotted border-secondary-foreground opacity-20" />
+        <hr className="mb-[20px] mt-[8px] border-dotted border-secondary-foreground opacity-20" />
       </header>
 
       {/* About */}
@@ -25,7 +25,7 @@ export default function Home() {
 
         {/* Description */}
         <div className="max-w-full text-secondary-foreground">
-          <p className="mb-[20px] leading-relaxed">
+          <p className="mb-[16px] leading-relaxed">
             <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />,
             and I&#39;m a <SpecialText text="Software Developer" /> living in
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}

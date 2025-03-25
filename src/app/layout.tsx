@@ -55,7 +55,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "font-baskervville antialiased text-[17px]",
+          "font-baskervville antialiased text-[16px]",
           notosansmath.variable,
           newsreader.variable,
           baskervville.variable,
