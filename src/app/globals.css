@@ -5,11 +5,11 @@
 
 @layer base {
   :root {
-    --background: 12, 12.2%, 91.96%;
+    --background: 52, 36%, 92%;
     /* Bold text */
-    --primary-foreground: 234.29, 51.22%, 16.08%;
+    --primary-foreground: 10, 91%, 65%;
     /* Regular text */
-    --secondary-foreground: 233.33, 16.07%, 19%;
+    --secondary-foreground: 0, 0%, 18%;
   }
 
   .dark {
