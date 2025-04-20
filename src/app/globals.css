@@ -6,18 +6,22 @@
 @layer base {
   :root {
     --background: 52, 36%, 92%;
-    /* Bold text */
-    --primary-foreground: 10, 91%, 65%;
     /* Regular text */
-    --secondary-foreground: 0, 0%, 18%;
+    --primary-foreground: 0, 0%, 18%;
+    /* Highlighted text */
+    --special-foreground: 0, 0%, 18%;
+    /* Hyperlinks */
+    --hyper-foreground: 10, 91%, 65%;
   }
 
   .dark {
     --background: 0 0% 6.27%;
-    /* Bold text */
-    --primary-foreground: 252 37% 98%;
     /* Regular text */
-    --secondary-foreground: 240, 4.88%, 83.92%;
+    --primary-foreground: 240, 4.88%, 67%;
+    /* Highlighted text */
+    --special-foreground: 252 37% 98%; 
+    /* Hyperlinks */
+    --hyper-foreground: 252 37% 98%;
   }
 
   body {

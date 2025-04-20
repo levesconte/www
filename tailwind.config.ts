@@ -20,8 +20,11 @@ const config = {
         primary: {
           foreground: "hsl(var(--primary-foreground))",
         },
-        secondary: {
-          foreground: "hsl(var(--secondary-foreground))",
+        special: {
+          foreground: "hsl(var(--special-foreground))",
+        },
+        hyper: {
+          foreground: "hsl(var(--hyper-foreground))",
         },
       },
     },
