@@ -19,7 +19,7 @@
     /* Regular text */
     --primary-foreground: 240, 4.88%, 67%;
     /* Highlighted text */
-    --special-foreground: 252 37% 98%; 
+    --special-foreground: 0 0% 85%;
     /* Hyperlinks */
     --hyper-foreground: 252 37% 98%;
   }

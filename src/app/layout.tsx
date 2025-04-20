@@ -62,7 +62,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <main className="mx-auto my-[30vmin] max-w-[700px] px-8 py-4">
+          <main className="mx-auto my-[30vmin] max-w-[750px] px-8 py-4">
             {children}
           </main>
         </ThemeProvider>
