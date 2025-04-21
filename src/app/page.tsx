@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col">
         <div className="flex flex-row items-center justify-between">
-          <h1 className="pr-4 font-reader font-medium text-special-foreground">
+          <h1 className="pr-4 font-reader font-medium text-special-foreground italic text-[17px]">
             Tomas Le Vesconte
           </h1>
           <ModeToggle />
