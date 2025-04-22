@@ -23,14 +23,14 @@ export default function ThemeToggle() {
     if (!mounted && "theme" in localStorage) {
       // fetch the localStorage theme value (if it exists),
       // otherwise use a default value.
-      let value: string = localStorage.getItem("theme") ?? DEFAULT_THEME;
+      const value: string = localStorage.getItem("theme") ?? DEFAULT_THEME;
 
       document.documentElement.classList.add(value);
       setTheme(value); // sync state with local
 
       setMounted(true);
     }
-  }, [theme]);
+  }, [mounted, theme]);
 
   return (
     <button
