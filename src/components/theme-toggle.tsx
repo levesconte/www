@@ -5,9 +5,7 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 export default function ThemeToggle() {
   const DEFAULT_THEME = "dark";
-
   const loaded = useRef<boolean>(false);
-
   const [theme, setTheme] = useState<string>(DEFAULT_THEME);
 
   useEffect(() => {
@@ -15,7 +13,6 @@ export default function ThemeToggle() {
       // removes
       document.documentElement.classList.remove("dark", "light");
       localStorage.removeItem("theme");
-      
       // adds
       document.documentElement.classList.add(theme);
       localStorage.setItem("theme", theme);
@@ -25,11 +22,9 @@ export default function ThemeToggle() {
       // fetch the localStorage theme value (if it exists),
       // otherwise use a default value.
       const value: string = localStorage.getItem("theme") ?? DEFAULT_THEME;
-
       document.documentElement.classList.add(value);
       setTheme(value); // sync state with local
     }
-
     loaded.current = true;
   }, [theme]);
 
@@ -40,10 +35,8 @@ export default function ThemeToggle() {
     >
       {/* Dark Icon */}
       <MoonIcon className="text-light-special-foreground h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-transform dark:scale-0 dark:-rotate-90" />
-
       {/* Light Icon */}
       <SunIcon className="dark:text-dark-special-foreground absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-transform dark:scale-100 dark:rotate-0" />
-
       {/* For accessibility */}
       <span className="sr-only">Toggle light/dark mode</span>
     </button>
