@@ -1,36 +1,37 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 export default function ThemeToggle() {
   const DEFAULT_THEME = "dark";
 
-  const [mounted, setMounted] = useState<boolean>(false);
+  const loaded = useRef<boolean>(false);
+
   const [theme, setTheme] = useState<string>(DEFAULT_THEME);
 
   useEffect(() => {
-    if (mounted) {
+    if (loaded.current) {
       // removes
       document.documentElement.classList.remove("dark", "light");
       localStorage.removeItem("theme");
-
+      
       // adds
       document.documentElement.classList.add(theme);
       localStorage.setItem("theme", theme);
     }
 
-    if (!mounted && "theme" in localStorage) {
+    if (!loaded.current && "theme" in localStorage) {
       // fetch the localStorage theme value (if it exists),
       // otherwise use a default value.
       const value: string = localStorage.getItem("theme") ?? DEFAULT_THEME;
 
       document.documentElement.classList.add(value);
       setTheme(value); // sync state with local
-
-      setMounted(true);
     }
-  }, [mounted, theme]);
+
+    loaded.current = true;
+  }, [theme]);
 
   return (
     <button
