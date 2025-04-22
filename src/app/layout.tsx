@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { ThemeProvider } from "@/src/components/theme-provider";
-
-import { cn } from "@/src/lib/utils";
 
 import { Noto_Sans_Math } from "next/font/google";
 import { Baskervville } from "next/font/google";
@@ -54,18 +51,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(
-          "font-baskervville antialiased text-[16px]",
-          notosansmath.variable,
-          newsreader.variable,
-          baskervville.variable,
-        )}
+        className={`${notosansmath.variable} ${newsreader.variable} ${baskervville.variable} font-baskervville bg-light-background dark:bg-dark-background text-[16px] antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <main className="mx-auto my-[30vmin] max-w-[750px] px-8 py-4">
-            {children}
-          </main>
-        </ThemeProvider>
+        <main className="mx-auto my-[30vmin] max-w-[750px] px-8 py-4">
+          {children}
+        </main>
       </body>
     </html>
   );

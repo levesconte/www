@@ -8,14 +8,14 @@ export default function Home() {
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col">
         <div className="flex flex-row items-center justify-between">
-          <h1 className="pr-4 font-reader font-medium text-special-foreground italic text-[17px]">
+          <h1 className="font-reader text-light-special-foreground dark:text-dark-special-foreground pr-4 text-[17px] font-medium italic">
             Tomas Le Vesconte
           </h1>
           <ModeToggle />
         </div>
 
         {/* Break */}
-        <hr className="mb-[28px] mt-[8px] border-dotted border-primary-foreground opacity-30" />
+        <hr className="border-light-primary-foreground dark:border-dark-primary-foreground mt-[8px] mb-[28px] border-dotted opacity-30" />
       </header>
 
       {/* About */}
@@ -24,7 +24,7 @@ export default function Home() {
         <h2 className="sr-only">About</h2>
 
         {/* Description */}
-        <div className="max-w-full text-primary-foreground">
+        <div className="text-light-primary-foreground dark:text-dark-primary-foreground max-w-full">
           <p className="mb-[22px] leading-relaxed">
             <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />,
             and I&#39;m a <SpecialText text="Software Developer" /> living in

@@ -7,7 +7,7 @@ export default function Hyperlink({
 }) {
   return (
     <a
-      className="font-reader text-[16px] font-medium text-hyper-foreground"
+      className="font-reader text-light-hyper-foreground dark:text-dark-hyper-foreground text-[16px] font-medium"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
