@@ -5,6 +5,7 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 export default function ThemeToggle() {
   const DEFAULT_THEME = "dark";
+  
   const loaded = useRef<boolean>(false);
   const [theme, setTheme] = useState<string>(DEFAULT_THEME);
 
