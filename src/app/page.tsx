@@ -31,7 +31,12 @@ export default function Home() {
             Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
-            <Hyperlink text="GitHub" href="https://github.com/levesconte" /> and <Hyperlink text="LinkedIn" href="https://www.linkedin.com/in/tlevesconte/" />.
+            <Hyperlink text="GitHub" href="https://github.com/levesconte" /> and{" "}
+            <Hyperlink
+              text="LinkedIn"
+              href="https://www.linkedin.com/in/tlevesconte/"
+            />
+            .
           </p>
 
           {/* Location */}
