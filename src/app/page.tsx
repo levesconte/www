@@ -26,9 +26,10 @@ export default function Home() {
         {/* Description */}
         <div className="text-light-primary-foreground dark:text-dark-primary-foreground max-w-full">
           <p className="mb-[22px] leading-relaxed">
-            <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />,
-            and I&#39;m a <SpecialText text="Software Developer" /> living in
-            Sweden. If you&#39;d like to get in touch, you can reach me at{" "}
+            <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />.
+            I&#39;m an avid <SpecialText text="runner" /> and{" "}
+            <SpecialText text="software developer" /> living in Sweden. If
+            you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
             also find me on{" "}
             <Hyperlink text="GitHub" href="https://github.com/levesconte" /> and{" "}
