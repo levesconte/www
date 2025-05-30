@@ -28,10 +28,10 @@ export default function Home() {
           <p className="mb-[22px] leading-relaxed">
             <SpecialText text="Hi!" /> My name is <SpecialText text="Tom" />.
             I&#39;m an avid <SpecialText text="runner" /> and{" "}
-            <SpecialText text="software developer" /> living in Sweden. If
-            you&#39;d like to get in touch, you can reach me at{" "}
-            <SpecialText text="tomas [at] leves [dot] se" />. You can
-            also find me on{" "}
+            <SpecialText text="software developer" /> living in Uppsala, Sweden.
+            If you&#39;d like to get in touch, you can reach me at{" "}
+            <SpecialText text="tomas [at] leves [dot] se" />. You can also find
+            me on{" "}
             <Hyperlink text="GitHub" href="https://github.com/levesconte" /> and{" "}
             <Hyperlink
               text="LinkedIn"
