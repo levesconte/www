@@ -17,7 +17,7 @@
 
   /* Dark */
   --color-dark-background: hsl(0 0% 6.27%);
-  --color-dark-primary-foreground: hsl(240, 4.88%, 67%); /* Regular text */
+  --color-dark-primary-foreground: hsl(240, 4.88%, 75%); /* Regular text */
   --color-dark-special-foreground: hsl(0 0% 85%); /* Highlighted text */
   --color-dark-hyper-foreground: hsl(252 37% 98%); /* Hyperlinks */
 

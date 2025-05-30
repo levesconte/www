@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col">
         <div className="flex flex-row items-center justify-between">
-          <h1 className="font-reader text-light-special-foreground dark:text-dark-special-foreground pr-4 text-[17px] font-medium italic">
+          <h1 className="font-reader text-light-special-foreground dark:text-dark-special-foreground pr-4 font-medium">
             Tomas Le Vesconte
           </h1>
           <ModeToggle />
@@ -30,12 +30,12 @@ export default function Home() {
             I&#39;m an avid <SpecialText text="runner" /> and{" "}
             <SpecialText text="software developer" /> living in Sweden. If
             you&#39;d like to get in touch, you can reach me at{" "}
-            <SpecialText text="tlevesconte [at] proton [dot] me" />. You can
+            <SpecialText text="tomas [at] leves [dot] se" />. You can
             also find me on{" "}
             <Hyperlink text="GitHub" href="https://github.com/levesconte" /> and{" "}
             <Hyperlink
               text="LinkedIn"
-              href="https://www.linkedin.com/in/tlevesconte/"
+              href="https://www.linkedin.com/in/tomas-levesconte"
             />
             .
           </p>
