@@ -1,8 +1,25 @@
+"use client";
+
 import ModeToggle from "@/src/components/theme-toggle";
 import Hyperlink from "@/src/components/hyperlink";
 import SpecialText from "@/src/components/special-text";
 
+import { useEffect, useRef } from "react";
+
 export default function Home() {
+  const FALLBACK_THEME: string = "dark";
+
+  const loaded = useRef<boolean>(false);
+
+  useEffect(() => {
+    if (!loaded.current) {
+      const theme: string = localStorage.getItem("theme") ?? FALLBACK_THEME;
+      document.documentElement.classList.add(theme);
+      localStorage.setItem("theme", theme);
+    }
+    loaded.current = true;
+  }, []);
+
   return (
     <>
       {/* Header */}
@@ -11,7 +28,7 @@ export default function Home() {
           <h1 className="font-reader text-light-special-foreground dark:text-dark-special-foreground pr-4 font-medium">
             Tomas Le Vesconte
           </h1>
-          <ModeToggle />
+          <ModeToggle fallback={FALLBACK_THEME} />
         </div>
 
         {/* Break */}

@@ -1,33 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
-export default function ThemeToggle() {
-  const FALLBACK_THEME = "dark";
-
-  const loaded = useRef<boolean>(false);
-
-  useEffect(() => {
-    if (!loaded.current) {
-      const theme: string = localStorage.getItem("theme") ?? FALLBACK_THEME;
-      document.documentElement.classList.add(theme);
-      localStorage.setItem("theme", theme);
-    }
-    loaded.current = true;
-  }, []);
-
+export default function ThemeToggle({ fallback }: { fallback: string }) {
   function toggleTheme() {
-    if (loaded.current) {
-      let theme: string = localStorage.getItem("theme") ?? FALLBACK_THEME;
-      theme = theme === "dark" ? "light" : "dark";
+    let theme: string = localStorage.getItem("theme") ?? fallback;
+    theme = theme === "dark" ? "light" : "dark";
 
-      document.documentElement.classList.remove("dark", "light");
-      localStorage.removeItem("theme");
+    document.documentElement.classList.remove("dark", "light");
+    localStorage.removeItem("theme");
 
-      document.documentElement.classList.add(theme);
-      localStorage.setItem("theme", theme);
-    }
+    document.documentElement.classList.add(theme);
+    localStorage.setItem("theme", theme);
   }
 
   return (
