@@ -25,7 +25,7 @@ export default function Home() {
       {/* Header */}
       <header className="animate-slide-down-and-fade-1 flex flex-col">
         <div className="flex flex-row items-center justify-between">
-          <h1 className="font-reader text-light-special-foreground dark:text-dark-special-foreground pr-4 text-[17px] font-medium italic">
+          <h1 className="font-reader text-light-special-foreground dark:text-dark-special-foreground pr-4 text-[18px] font-medium italic">
             Tomas Le Vesconte
           </h1>
           <ModeToggle fallback={FALLBACK_THEME} />

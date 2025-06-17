@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notosansmath.variable} ${newsreader.variable} ${baskervville.variable} font-baskervville bg-light-background dark:bg-dark-background text-[16px] antialiased`}
+        className={`${notosansmath.variable} ${newsreader.variable} ${baskervville.variable} font-baskervville bg-light-background dark:bg-dark-background text-[17px] antialiased`}
       >
         <main className="mx-auto my-[30vmin] max-w-[750px] px-8 py-4">
           {children}
