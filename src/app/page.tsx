@@ -49,12 +49,7 @@ export default function Home() {
             you&#39;d like to get in touch, you can reach me at{" "}
             <SpecialText text="tomas [at] leves [dot] se" />. You can also find
             me on{" "}
-            <Hyperlink text="GitHub" href="https://github.com/levesconte" /> and{" "}
-            <Hyperlink
-              text="LinkedIn"
-              href="https://www.linkedin.com/in/tomas-levesconte"
-            />
-            .
+            <Hyperlink text="GitHub" href="https://github.com/levesconte" />.
           </p>
 
           {/* Location */}
